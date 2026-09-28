@@ -11,5 +11,5 @@ A static, multi-page clone of the Spotify web interface. This project demonstrat
 * **Hover Effects:** Includes interactive CSS hover states on navigation links and buttons for a better user experience.
 
 ## Tech Stack
-* HTML
-* CSS (Flexbox, Box Model, Selectors)
+* HTML5
+* CSS3 (Flexbox, Box Model, Selectors)
