@@ -1,0 +1,176 @@
+/* General Reset & Box Model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #191414; /* Required Black */
+    color: white;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Semantic Tags & Layout */
+header {
+    background-color: #000000;
+    padding: 20px 40px;
+}
+
+nav {
+    display: flex; /* Flexbox Requirement 1 */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a:hover {
+    color: #1DB954; /* Bonus Hover Effect */
+}
+
+/* Hero Section (ID Selector Requirement) */
+#hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #222222, #191414);
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* Reusable Classes */
+.btn {
+    display: inline-block;
+    background-color: #1DB954; /* Required Green */
+    color: #191414;
+    padding: 12px 30px;
+    border-radius: 25px; /* Box Model (Radius) */
+    font-weight: bold;
+    margin-top: 20px;
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05); /* Bonus Hover Effect */
+    background-color: #1ed760;
+}
+
+/* Card Layout */
+.section-title {
+    padding: 20px 40px;
+    font-size: 1.5rem;
+}
+
+.card-container {
+    display: flex; /* Flexbox Requirement 2 */
+    gap: 20px;
+    padding: 0 40px 40px 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #282828;
+    padding: 15px; /* Box Model (Padding) */
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.card:hover {
+    background-color: #383838;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 15px; /* Box Model (Margin) */
+}
+
+/* Playlist Details */
+.playlist-header {
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+    align-items: flex-end;
+    background: linear-gradient(transparent 0, rgba(0,0,0,.5) 100%);
+}
+
+.playlist-header img {
+    width: 232px;
+    box-shadow: 0 4px 60px rgba(0,0,0,.5);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    text-align: left;
+    padding: 15px 40px;
+    border-bottom: 1px solid #282828;
+}
+
+th {
+    color: #b3b3b3;
+    font-weight: normal;
+}
+
+tr:hover {
+    background-color: #2a2a2a;
+}
+
+/* Form Styles */
+.form-container {
+    max-width: 400px;
+    margin: 60px auto;
+    background-color: #000;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555;
+    background-color: #282828;
+    color: white;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    color: #b3b3b3;
+    font-size: 0.9rem;
+    background-color: #000;
+}
+.logo-img {
+    height: 40px;
+    filter: brightness(0) invert(1); /* Makes the black logo white to fit the dark theme */
+}
