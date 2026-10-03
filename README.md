@@ -1,4 +1,4 @@
-##Spotify Website Clone
+#Spotify Website Clone
 
 A static, multi-page clone of the Spotify web interface. This project demonstrates fundamental web development skills and UI design principles without the use of JavaScript or external CSS frameworks.
 
